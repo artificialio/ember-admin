@@ -8,7 +8,7 @@ export default DS.Store.extend({
       if (adapter.namespace) {
         namespaces = adapter.namespace.split('/');
       }
-      namespaces.push('admin');
+      //namespaces.push('admin');
       var AdminAdapter = adapter.constructor.extend({
         namespace: namespaces.join('/')
       });
